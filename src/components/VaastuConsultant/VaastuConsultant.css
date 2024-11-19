@@ -1,0 +1,232 @@
+/* VaastuConsultant.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+/* body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+} */
+
+.vaastu-consultant {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.vaastu-hero {
+  background-image: url('https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+
+.vaastu-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.vaastu-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.vaastu-button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.vaastu-button:hover {
+  background-color: #ee5253;
+}
+
+.vaastu-introduction,
+.vaastu-services,
+.vaastu-process,
+.vaastu-benefits,
+.vaastu-testimonial,
+.vaastu-contact {
+  background-color: white;
+  border-radius: 8px;
+  padding: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #2d3436;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.vaastu-intro-images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.vaastu-intro-images img {
+  width: 48%;
+  border-radius: 8px;
+  object-fit: cover;
+  height: 300px;
+}
+
+.vaastu-service-grid,
+.vaastu-benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.vaastu-service-item,
+.vaastu-benefit-item {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.vaastu-service-item:hover,
+.vaastu-benefit-item:hover {
+  transform: translateY(-5px);
+}
+
+.vaastu-service-item img,
+.vaastu-benefit-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.vaastu-process-steps {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.vaastu-step {
+  flex-basis: 22%;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.vaastu-testimonial {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.vaastu-testimonial blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.vaastu-form {
+  display: grid;
+  gap: 20px;
+}
+
+.vaastu-form input,
+.vaastu-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.vaastu-form textarea {
+  height: 150px;
+}
+
+.vaastu-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #2d3436;
+  color: white;
+  border-radius: 8px;
+}
+
+.vaastu-bot-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vaastu-bot-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.vaastu-bot-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .vaastu-intro-images {
+    flex-direction: column;
+  }
+
+  .vaastu-intro-images img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .vaastu-process-steps {
+    flex-direction: column;
+  }
+
+  .vaastu-step {
+    flex-basis: 100%;
+  }
+
+  .vaastu-hero h1 {
+    font-size: 2rem;
+  }
+
+  .vaastu-hero p {
+    font-size: 1rem;
+  }
+}

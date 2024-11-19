@@ -1,0 +1,194 @@
+/* Footer Container */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #180705; /* Darkest shade for the main background */
+  color: #DAD0D0; /* Light color for text */
+  border-top: 1px solid #690D0B; /* Dark shade for border */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Corrected 'rgba' syntax */
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 25%;
+}
+
+.footer-container::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, #E91815, transparent); /* Gradient for subtle effect */
+  animation: rotateBackground 8s linear infinite;
+  z-index: 0;
+  opacity: 0.1;
+}
+
+@keyframes rotateBackground {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Footer Content */
+.footer-content,
+.footer-bottom {
+  position: relative;
+  z-index: 1;
+}
+
+.footer-update {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between input and button */
+}
+
+.footer-updates-section h4 {
+  margin-left: 20px;
+  color: #E91815; /* Mid-tone shade for headers */
+}
+
+.footer-update input,
+.footer-update button {
+  backdrop-filter: blur(10px);
+}
+
+.footer-update input {
+  padding: 15px;
+  border: 1px solid #E91815; /* Mid-tone for border */
+  border-radius: 5px;
+  width: 80%;
+  font-size: 16px;
+  color: #F3F0F0; /* Lightest shade for text */
+  background: rgba(255, 255, 255, 0.1);
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.footer-update input:focus {
+  border-color: #DAD0D0; /* Light shade for border on focus */
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+.footer-update button {
+  padding: 10px;
+  background-color: #690D0B; /* Dark shade for button background */
+  color: #F3F0F0; /* Light shade for button text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+  width: 40%;
+}
+
+.footer-update button:hover {
+  background-color: #180705; /* Darkest shade on hover */
+  transform: translateY(-3px);
+}
+
+/* Footer Sections */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 15px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.footer-section h4 {
+  color: #DAD0D0; /* Light shade for section headers */
+  margin-bottom: 10px;
+}
+
+.footer-section h4::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #E91815; /* Mid-tone shade for underline */
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+
+.footer-section:hover h4::after {
+  width: 100%;
+}
+
+.footer-section a {
+  color: #E91815; /* Mid-tone shade for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #F3F0F0; /* Lightest shade on hover */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9em;
+  background-color: #690D0B; /* Dark shade for footer bottom background */
+  border-top: 1px solid #E91815; /* Mid-tone shade for border */
+  color: #F3F0F0; /* Lightest shade for text */
+  width: 100%;
+}
+
+.footer-bottom a {
+  color: #E91815; /* Mid-tone shade for links */
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  .footer-container {
+    padding: 20px;
+  }
+
+  .footer-section {
+    flex: 1 1 100%;
+  }
+}
+
+/* Social Media Icons */
+.footer-social-media {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-social-media a {
+  color: #E91815; /* Mid-tone shade for social media icons */
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social-media a:hover {
+  transform: scale(1.1);
+  color: #F3F0F0; /* Lightest shade on hover */
+}
+
+.footer-social-media .icon {
+  margin-left: 5px;
+}

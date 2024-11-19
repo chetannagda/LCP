@@ -1,0 +1,14 @@
+.save-page {
+    padding:20px;
+    text-align: center;
+  }
+  
+  .saved-posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .saved-posts-container .property-ad {
+    margin: 15px;
+  }

@@ -1,0 +1,93 @@
+.conversation-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e6e6e6;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.conversation-item:hover {
+    background: #ff9f9f; /* Updated background color for hover effect */
+}
+
+.conversation-item:last-child {
+    border-bottom: none;
+}
+
+.conversation-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.conversation-details {
+    display: flex;
+    flex-direction: column; /* Fixed the syntax error here */
+    flex: 1;
+}
+
+.conversation-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.conversation-message {
+    color: #777;
+}
+
+.conversation-message.unread {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .conversation-item {
+        padding: 12px 18px;
+    }
+
+    .conversation-photo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .conversation-name {
+        font-size: 1.05rem;
+    }
+
+    .conversation-message {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .conversation-list {
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .conversation-item {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start of the container */
+        padding: 10px 15px;
+    }
+
+    .conversation-photo {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px; /* Add space below photo */
+    }
+
+    .conversation-name {
+        font-size: 1rem;
+    }
+
+    .conversation-message {
+        font-size: 0.9rem;
+    }
+}

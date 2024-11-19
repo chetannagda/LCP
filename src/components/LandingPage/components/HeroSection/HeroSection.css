@@ -1,0 +1,150 @@
+/* Main Hero Section */
+.hero-heroSection {
+  width: 100%;
+  /* background: linear-gradient(to bottom, #F3F0F0, #DAD0D0, #E91815, #690D0B, #180705);  */
+  background-color: rgb(206, 206, 206);
+  background-size: cover;
+  background-position: center;
+  padding: 10px 0;
+  backdrop-filter: blur(4.2px);
+  -webkit-backdrop-filter: blur(4.2px);
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/* Adding a moving starry night effect */
+.hero-heroSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: starsMove 50s linear infinite;
+}
+
+@keyframes starsMove {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+/* Hero Content Styling */
+.hero-heroContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Hero Section Headings */
+.hero-heroSection h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #180705; /* Dark color for text */
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Selection Containers */
+.hero-selectionContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-selectionGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-selectionGroup label {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: black; /* Medium color for labels */
+  background-color: transparent;
+  opacity: 0.8;
+  backdrop-filter: blur(4.2px);
+  transition: opacity 0.3s ease;
+}
+
+.hero-selectionGroup label:hover {
+  opacity: 1;
+}
+
+.hero-selectionGroup select {
+  padding: 10px;
+  font-size: 1.5rem;
+  border: 2px solid rgb(86, 86, 86); /* Red border */
+  border-radius: 4px;
+  width: 200px;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.hero-selectionGroup select:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 178, 149, 0.5);
+}
+
+/* Categories Display */
+.hero-openlyShownCategories {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+  max-width: 100%;
+  overflow-x: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-openlyShownCategories button {
+  background-color: gainsboro; /* Red for buttons */
+  color: black; /* Light text for contrast */
+  padding: 10px 20px;
+  border-radius: 14px;
+  font-size: 1.2rem;
+  border: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero-openlyShownCategories button:hover {
+  background-color: #DAD0D0; /* Neutral color on hover */
+  color: #E91815; /* Medium shade on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .hero-selectionContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-selectionGroup {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .hero-selectionGroup select {
+    width: 100%;
+  }
+
+  .hero-openlyShownCategories {
+    justify-content: flex-start;
+    gap: 8px;
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-heroSection h1 {
+    font-size: 1.5rem;
+  }
+}

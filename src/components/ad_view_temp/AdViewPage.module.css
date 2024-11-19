@@ -1,0 +1,199 @@
+/* AdViewPage.module.css */
+
+.adViewContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #F3F0F0; /* Lightest color for background */
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.propertyTitle {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #180705; /* Darkest shade for text */
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.imageGallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.imageGallery img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  cursor: zoom-in;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.propertyDescription {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: black; /* Dark red for text */
+  text-align: justify;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.imageGallery img:hover {
+  transform: scale(1.1);
+}
+
+.propertyPrice {
+  font-size: 36px;
+  color: #E91815; /* Mid-tone red for price */
+  margin-bottom: 30px;
+}
+
+.propertyDetails, .sellerInfo {
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-align: left;
+  color: black; /* Mid-tone red for text */
+}
+
+.adActions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.adActions button {
+  padding: 15px 25px;
+  border: none;
+  background-color: #DAD0D0; /* Light gray background for buttons */
+  color: #180705; /* Darkest shade for text */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5em;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.adActions button:hover {
+  background-color: #E91815; /* Mid-tone red for button hover */
+  color: #F3F0F0; /* Lightest color for button text on hover */
+}
+
+.fullscreenOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.fullscreenOverlay img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.fullscreenOverlay button {
+  position: absolute;
+  background-color: #F3F0F0; /* Lightest color for button background */
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.fullscreenOverlay button.next {
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.fullscreenOverlay button.close {
+  top: 10px;
+  right: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .propertyTitle {
+    font-size: 36px;
+  }
+  .propertyPrice {
+    font-size: 28px;
+  }
+  .propertyDescription {
+    font-size: 18px;
+  }
+  .propertyDetails, .sellerInfo {
+    font-size: 16px;
+  }
+  .imageGallery img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .adActions {
+    flex-direction: column;
+    align-items: center;
+  }
+  .adActions button {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .propertyTitle {
+    font-size: 28px;
+  }
+  .propertyDescription, .propertyDetails, .sellerInfo {
+    text-align: center;
+  }
+  .propertyPrice {
+    font-size: 24px;
+  }
+  .propertyDescription {
+    font-size: 16px;
+  }
+  .imageGallery img {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .adViewContainer {
+    padding: 20px;
+  }
+  .propertyTitle {
+    font-size: 22px;
+  }
+  .propertyPrice {
+    font-size: 20px;
+  }
+  .propertyDescription {
+    font-size: 14px;
+  }
+  .imageGallery img {
+    max-width: 150px;
+  }
+  .adActions button {
+    padding: 10px 15px;
+    font-size: 1.2em;
+  }
+}

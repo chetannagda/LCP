@@ -1,0 +1,18 @@
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.adsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .adsContainer {
+    flex-direction: column;
+    align-items: center; /* Center items vertically */
+  }
+}

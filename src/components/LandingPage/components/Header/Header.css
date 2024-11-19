@@ -1,0 +1,180 @@
+/* General Navbar Styling */
+.header-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  /* background: linear-gradient(270deg, #180705, #690D0B, #E91815, #DAD0D0, #F3F0F0);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite; */
+  background-color: #380302;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+/* Gradient Background Animation */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Styling for the logo */
+.header-logo img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.header-logo img:hover {
+  transform: scale(1.1) rotate(5deg);
+  background-color: #F3F0F0; /* Light color for better contrast */
+  backdrop-filter: blur(3.9px);
+  -webkit-backdrop-filter: blur(3.9px);
+}
+
+/* Styling for select inputs */
+.header-location-select, .header-language-select {
+  padding: 5px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2em;
+  color: #F3F0F0; /* Light color for contrast */
+  background-color: transparent;
+  margin: 0 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.header-location-select:hover, .header-language-select:hover {
+  background-color: #E91815; /* Middle shade */
+  transform: scale(1.05);
+}
+
+/* Search bar container */
+.header-search-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  margin-right: 5px;
+}
+
+/* Search bar */
+.header-search-bar {
+  flex-grow: 1;
+  padding: 6px;
+  border: 1px solid #F3F0F0; /* Light border */
+  border-radius: 20px;
+  font-size: 1em;
+  color: #F3F0F0; /* Light text */
+  background-color: transparent;
+  transition: border-color 0.3s ease;
+}
+
+.header-search-bar:focus {
+  border-color: #E91815; /* Middle shade */
+}
+
+/* Search icon */
+.header-search-icon {
+  font-size: 1.8em;
+  color: #F3F0F0; /* Light color */
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.header-search-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Nav buttons */
+.header-nav-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-nav-button, .header-post-button, .header-login-button {
+  padding: 6px 20px;
+  border: none;
+  background-color: transparent;
+  font-size: 1.4em;
+  color: #F3F0F0; /* Light color for buttons */
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.header-nav-button:hover, .header-post-button:hover, .header-login-button:hover {
+  background: #E91815; /* Middle shade */
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* Responsive Design - Mobile */
+@media (max-width: 768px) {
+  .header-navbar {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .header-logo img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header-nav-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .header-location-select, .header-language-select {
+    font-size: 0.9em;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 375px) {
+  .header-navbar {
+    padding: 10px;
+  }
+
+  .header-logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .header-nav-buttons {
+    gap: 5px;
+  }
+
+  .header-nav-button, .header-post-button, .header-login-button {
+    font-size: 0.9em;
+  }
+}
+
+/* Profile Styling */
+.header-profile-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: auto; /* Pushes profile picture to the end */
+  margin-right: 20px; /* Adjust as needed */
+}
+
+.header-profile-picture {
+  width: 50px; /* Larger size */
+  height: 50px; /* Larger size */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #F3F0F0; /* Light border */
+}

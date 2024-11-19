@@ -1,0 +1,362 @@
+ .pad-pick-and-drop {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.pad-hero {
+  background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 80px 0 40px;
+  position: relative;
+  width: 100%;
+}
+
+.pad-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.pad-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.pad-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.pad-hero p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.pad-button {
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pad-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.pad-truck-icon {
+  position: fixed;
+  font-size: 2rem;
+  z-index: 1000;
+}
+
+.pad-how-it-works {
+  padding: 60px 0;
+  background-color: white;
+  width: 100%;
+}
+
+.pad-how-it-works h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.pad-steps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.pad-step {
+  text-align: center;
+  max-width: 300px;
+  margin: 0 15px 2rem;
+  width: calc(33.333% - 30px);
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.pad-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.pad-step-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.pad-step h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #dc2626;
+}
+
+.pad-step p {
+  color: #666;
+}
+
+.pad-pricing-timing,
+.pad-pickup-form,
+.pad-testimonials {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pad-pricing-timing h2,
+.pad-pickup-form h2,
+.pad-testimonials h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.pad-pricing-timing {
+  text-align: center; /* Center align all text in this section */
+}
+
+.pad-pricing-timing h2 {
+  font-size: 2.5rem;  /* Adjust font size as needed */
+  margin-bottom: 2rem; /* Space below the heading */
+  color: #333; /* Main heading color */
+}
+
+.pad-pricing-timing-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pad-pricing,
+.pad-timing {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 15px;
+  padding: 15px;
+}
+
+.pad-pricing h3,
+.pad-timing h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #dc2626;
+  text-align: center;
+}
+
+.pad-pricing ul,
+.pad-timing ul {
+  list-style-type: none;        /* Remove default list styles */
+  padding: 0;                   /* Remove default padding */
+  display: flex;                /* Use flexbox for entries */
+  flex-direction: column;       
+}
+
+.pad-pricing li,
+.pad-timing li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  margin: 10px 0;              /* Space between items */
+  position: relative;           /* Position relative for pseudo-elements */
+  padding-left: 20px; 
+}
+
+
+
+.pad-pickup-form form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.pad-form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.pad-pickup-form input,
+.pad-pickup-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.pad-pickup-form button[type="submit"] {
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pad-pickup-form button[type="submit"]:hover {
+  background-color: #b91c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.pad-testimonial-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.pad-testimonial {
+  background-color: #f3f4f6;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.pad-testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.pad-testimonials {
+  max-width: 800px;       /* Max width for the section */
+  margin: 40px auto 0;        /* Center the section */
+  padding: 40px;         /* Padding around the section */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px;    /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.pad-testimonials h2 {
+  text-align: center;     /* Center the main heading */
+  font-size: 2rem;       /* Font size */
+  margin-bottom: 20px;   /* Margin below the heading */
+  color: #333;           /* Dark text color */
+}
+
+.pad-testimonial-list {
+  margin-bottom: 30px;    /* Space below the testimonials list */
+}
+
+.pad-testimonial {
+  background-color: #fff; /* White background for each testimonial */
+  padding: 15px;          /* Padding inside testimonial */
+  border-radius: 6px;     /* Rounded corners */
+  margin-bottom: 15px;    /* Space between testimonials */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.pad-testimonial p {
+  font-size: 1rem;        /* Font size for testimonial message */
+  color: #666;            /* Grey text color */
+}
+
+.pad-testimonial-name {
+  text-align: right;      /* Align the name to the right */
+  font-weight: bold;      /* Bold name */
+  color: #333;            /* Dark text color */
+}
+
+.pad-testimonials form {
+  display: flex;          /* Use flexbox for the form layout */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.pad-testimonials input,
+.pad-testimonials textarea {
+  padding: 10px;          /* Padding inside input and textarea */
+  margin-bottom: 15px;    /* Space between elements */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 4px;     /* Rounded corners */
+  font-size: 1rem;        /* Font size */
+}
+
+.pad-testimonials button[type="submit"] {
+  background-color: #dc2626; /* Button background color */
+  color: white;              /* Text color */
+  border: none;              /* No border */
+  padding: 14px 28px;        /* Padding around the text */
+  font-size: 1.1rem;         /* Font size */
+  font-weight: bold;         /* Bold text */
+  border-radius: 4px;       /* Rounded corners */
+  cursor: pointer;           /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Transition for hover effect */
+}
+
+.pad-testimonials button[type="submit"]:hover {
+  background-color: #b91c1c; /* Darker shade on hover */
+}
+
+
+.pad-testimonial-name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  color: #dc2626;
+}
+
+.pad-testimonial-name span {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1200px) {
+  .pad-step {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 768px) {
+  .pad-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .pad-hero p {
+    font-size: 1.2rem;
+  }
+
+  .pad-step {
+    width: 100%;
+  }
+}
+

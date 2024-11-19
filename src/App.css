@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;500;600&display=swap');
+
+
+/* Titles and Headings (Semi-Bold 600) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 600;
+}
+
+/* Less Important Headings (Medium 500) */
+h6, strong, b {
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 500;
+}
+
+/* Paragraphs, List Items, Options (Light 300) */
+p, span, li, option {
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 300;
+}
+
+/* Buttons (Medium 500) */
+button, input[type="submit"], input[type="button"] {
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 500;
+}
+
+/* Labels and Form Inputs (Light 300) */
+label, input, textarea, select {
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 300;
+}
+
+/* Navigation and Links (Medium 500 to Semi-Bold 600) */
+nav, a {
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 500;
+}
+
+a:hover, a:active {
+  font-weight: 600; /* Emphasis on hover or active state */
+}
