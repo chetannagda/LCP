@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/LCP/static/css/main.190eed07.css",
+    "main.js": "/LCP/static/js/main.31cdf8eb.js",
+    "static/js/453.08e6944d.chunk.js": "/LCP/static/js/453.08e6944d.chunk.js",
+    "static/media/LandLaw.pdf": "/LCP/static/media/LandLaw.9eac6507c862417acbcd.pdf",
+    "static/media/consult.png": "/LCP/static/media/consult.4cad4187d174ed479ff0.png",
+    "static/media/PdfPreviewImage.png": "/LCP/static/media/PdfPreviewImage.cbb53a6483cdf719e8d2.png",
+    "index.html": "/LCP/index.html",
+    "main.190eed07.css.map": "/LCP/static/css/main.190eed07.css.map",
+    "main.31cdf8eb.js.map": "/LCP/static/js/main.31cdf8eb.js.map",
+    "453.08e6944d.chunk.js.map": "/LCP/static/js/453.08e6944d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.190eed07.css",
+    "static/js/main.31cdf8eb.js"
+  ]
+}
