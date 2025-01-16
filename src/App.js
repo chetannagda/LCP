@@ -53,7 +53,8 @@ function App() {
           <Route path="/landingpage" element={<LandingPage />} />
          <Route path="/" element={<Navigate to="/landingpage" />} />
           {/* <Route path="/adviewpage" element={<AdViewPage />} /> */}
-          <Route path="/property/:id" component={Adviewpage} />
+          {/* <Route path="/property/:id" component={Adviewpage} /> */}
+          <Route path="/property/:id" element={<Adviewpage />} />
           {/* <Route path="/floatbutton" element={<FloatingButton />} /> */}
            <Route path="/consult" element={<Consultancy />} />
           <Route path="/propertyconsult" element={<PropertyConsult />} />
