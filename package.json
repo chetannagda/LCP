@@ -2,6 +2,7 @@
   "name": "lcpreact",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://chetannagda.github.io/LCP",
   "dependencies": {
     "@heroicons/react": "^2.1.5",
     "@react-oauth/google": "^0.12.1",
